@@ -30,5 +30,7 @@ This solution combines robust deep learning-based detection with real-time track
 
 ### References
 https://github.com/Utkal97/Object-Tracking/tree/main
+
 https://learnopencv.com/understanding-multiple-object-tracking-using-deepsort/#Introduction-to-DeepSORT
+
 https://arxiv.org/pdf/2207.12202v1 
