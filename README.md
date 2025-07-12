@@ -27,6 +27,21 @@ The code computes and reports tracking metrics required by the VIP Cup, includin
 ### Summary:
 This solution combines robust deep learning-based detection with real-time tracking and direction analysis, tailored for drone surveillance in complex environments.
 
+### How deepsort works?
+
+<img width="850" height="339" alt="image" src="https://github.com/user-attachments/assets/a0061687-96eb-4b56-a055-418f802736e1" />
+image ref: https://www.researchgate.net/figure/Architecture-of-Deep-SORT-Simple-online-and-real-time-tracking-with-deep-association_fig2_353256407 
+
+DeepSORT (Deep Learning-based SORT) is an extension of the popular object tracking algorithm called SORT (Simple Online and Realtime Tracking). DeepSORT adds deep appearance feature extraction and a matching process to the original SORT algorithm to improve its tracking accuracy and robustness.
+The architecture of DeepSORT can be broken down into the following steps:
+1.	Detection: Use an object detection algorithm (such as YOLO) to detect objects in each frame of a video.
+2.	Feature extraction: Extract a deep appearance feature vector for each detected object using a CNN-based feature extractor (such as ResNet).
+3.	Data association: Associate the detected objects across frames using a matching algorithm (such as the Hungarian algorithm) that takes into account both the location and appearance of the objects.
+4.	Track management: Manage the tracks by updating the state of each track (i.e., position and velocity) based on the associated objects and their appearance features.
+5.	Track pruning: Remove tracks that have not been associated with any objects for a certain number of frames or that have low confidence scores.
+The deep appearance features used in DeepSORT are learned during training from a large dataset of object images. By incorporating appearance features in addition to the location and motion information used by the original SORT algorithm, DeepSORT is able to handle situations where objects may temporarily disappear or occlude each other, leading to more accurate and robust object tracking.
+
+
 
 ### References
 https://github.com/Utkal97/Object-Tracking/tree/main
