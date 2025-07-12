@@ -26,3 +26,9 @@ The code computes and reports tracking metrics required by the VIP Cup, includin
 
 ### Summary:
 This solution combines robust deep learning-based detection with real-time tracking and direction analysis, tailored for drone surveillance in complex environments.
+
+
+### References
+https://github.com/Utkal97/Object-Tracking/tree/main
+https://learnopencv.com/understanding-multiple-object-tracking-using-deepsort/#Introduction-to-DeepSORT
+https://arxiv.org/pdf/2207.12202v1 
